@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="demo.css">
+	<!-- jquery needed -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<h3>Mapload.js</h3>
+	<hr>
+	<br>
+	<form method="post" enctype="mulitipart/form-data">
+		<div class="form-group">
+			<label>Image File Example</label>
+			<div class="description">Try this one, select image please. Or if you are tester, just upload file with other extensions :)</div>
+			<div class="imagepicker" data-target="image_file">
+			</div>
+		</div>
+		<div class="form-group">
+			<label>PDF File Example</label>
+			<div class="description">Try this one, select multiple pdf file please. Or if you are tester, just upload file with other extensions :)</div>
+			<div class="pdfpicker" data-target="pdf_file">
+			</div>
+		</div>
+	</form>
+
+	<script src="mapload.js"></script>
+
+	<script type="text/javascript">
+		$(".imagepicker").filepicker({
+			type : 'img', // img, doc, default img
+			max : 0, // default 0, 0 = unlimited
+			allowed : 'png,jpg,jpeg', // without . and use , as prefix
+			files : 1, //default 1, for allow multiple files define number of max files, 0 for unlimited
+			thumbnail : 'https://getuikit.com/v2/docs/images/placeholder_200x100.svg' // thumbnail url
+		});
+		$(".pdfpicker").filepicker({
+			type : 'doc', // img, doc, default img
+			max : 2000, // default 0, 0 = unlimited
+			allowed : 'pdf', // without . and use , as prefix
+			files : 5, //default 1, for allow multiple files define number of max files, 0 for unlimited
+		});
+	</script>
+
+</body>
+</html>

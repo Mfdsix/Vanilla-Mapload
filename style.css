@@ -1,0 +1,33 @@
+.mapload-preview{
+	border-top: 3px dashed #777;
+	border-left: 3px dashed #777;
+	border-right: 3px dashed #777;
+	background: #eee;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+.mapload-preview:hover{
+	cursor: pointer;
+}
+.mapload-input{
+	display: none;
+}
+.mapload-notif{
+	padding: 10px;
+	background: #f25555;
+	border-radius: 3px;
+	color: #fff;
+}
+.mapload-filename{
+	margin-top: -5px;
+	color: #1362d1;
+	width: 150px;
+	padding: 2px 0;
+	text-align: center;
+	border-bottom: 3px dashed #777;
+	border-left: 3px dashed #777;
+	border-right: 3px dashed #777;
+	background: #eee;
+	font-size: 14px;
+}
